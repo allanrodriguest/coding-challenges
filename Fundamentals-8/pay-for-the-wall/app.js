@@ -7,3 +7,7 @@
 
 const whoIsPaying = name =>
   name.length <= 2 ? [name] : [name, name.slice(0, 2)]
+
+// Solution using Set()
+
+const whoIsPaying = name => [...new Set([name, name.slice(0, 2)])]
