@@ -8,3 +8,13 @@
 // getNumberFromString(s)
 
 const getNumberFromString = s => +s.replace(/\D/g, '')
+
+// Solution without RegEx
+
+const getNumberFromString = s =>
+  Number(
+    s
+      .split('')
+      .filter(el => '0123456789'.includes(el))
+      .join('')
+  )
