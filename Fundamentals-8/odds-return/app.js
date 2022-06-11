@@ -7,3 +7,7 @@
 // [2, 4, 6]        -->  []
 
 const odds = arr => [...arr].filter(el => !!(el & 1))
+
+// Add Solution #2
+
+const odds = arr => [...arr].filter(el => el % 2)
