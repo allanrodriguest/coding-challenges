@@ -33,3 +33,15 @@ function sameCase(a, b) {
   }
   return 0
 }
+
+// Simplified Solution
+
+function sameCase(a, b) {
+  if (
+    a.toLowerCase() === a.toUpperCase() ||
+    b.toLowerCase() === b.toUpperCase()
+  ) {
+    return -1
+  }
+  return (a.toLowerCase() === a) === (b.toLowerCase() === b) ? 1 : 0
+}
