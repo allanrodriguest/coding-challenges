@@ -16,3 +16,20 @@
 // 'B' and 'g' returns 0
 
 // '0' and '?' returns -1
+
+function sameCase(a, b) {
+  let aUpperado = a.toUpperCase(),
+    aDownerado = a.toLowerCase(),
+    bUpperado = b.toUpperCase(),
+    bDownerado = b.toLowerCase()
+
+  if (aUpperado == aDownerado || bUpperado == bDownerado) {
+    return -1
+  } else if (
+    (a == aDownerado && b == bDownerado) ||
+    (a == aUpperado && b == bUpperado)
+  ) {
+    return 1
+  }
+  return 0
+}
