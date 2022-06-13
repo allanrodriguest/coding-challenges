@@ -31,3 +31,12 @@ const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) =>
   )
     ? 'Shark Bait!'
     : 'Alive!'
+
+// Simplified solution
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+  return sharkDistance / (sharkSpeed /(dolphin ? 2 : 1)) >
+    pontoonDistance / youSpeed
+    ? 'Alive!'
+    : 'Shark Bait!'
+}
