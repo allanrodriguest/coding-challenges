@@ -15,5 +15,16 @@ const vowels = {
   117: 'u'
 }
 function isVow(arr) {
-  return arr.map(el => (vowels.hasOwnProperty(el) ? vowels[el] : el))
+  return arr.map(el => vowels[el] || el)
+}
+
+// Solution using String.fromCharCode
+
+function isVow(arr) {
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  return arr.map(code =>
+    vowels.includes(String.fromCharCode(code))
+      ? String.fromCharCode(code)
+      : code
+  )
 }
