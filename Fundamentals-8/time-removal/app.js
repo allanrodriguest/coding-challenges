@@ -14,3 +14,7 @@
 // Output will be the shortened string, e.g., "Friday May 2".\
 
 const shortenToDate = longDate => longDate.slice(0, longDate.indexOf(','))
+
+// Solution using split()
+
+const shortenToDate = longDate => longDate.split(',')[0]
