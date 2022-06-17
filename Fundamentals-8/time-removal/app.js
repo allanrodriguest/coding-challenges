@@ -11,4 +11,6 @@
 // Input will always be a string, e.g., "Friday May 2, 7pm". 
 
 // Output
-// Output will be the shortened string, e.g., "Friday May 2".
+// Output will be the shortened string, e.g., "Friday May 2".\
+
+const shortenToDate = longDate => longDate.slice(0, longDate.indexOf(','))
