@@ -17,3 +17,9 @@
 
 const contamination = (text, char) =>
   Array.from({ length: text.length }).fill(char).join('')
+
+// Solution using char repeat()
+
+function contamination(text, char) {
+  return char.repeat(text.length)
+}
