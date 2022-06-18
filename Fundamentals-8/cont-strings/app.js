@@ -14,3 +14,6 @@
 // text before = "abc"
 // character   = "z"
 // text after  = "zzz"
+
+const contamination = (text, char) =>
+  Array.from({ length: text.length }).fill(char).join('')
