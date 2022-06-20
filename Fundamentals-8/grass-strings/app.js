@@ -10,3 +10,5 @@
 // returns:
 
 // 'James Stevens'
+
+const combineNames = (str1, str2) => [str1, str2].join(' ')
