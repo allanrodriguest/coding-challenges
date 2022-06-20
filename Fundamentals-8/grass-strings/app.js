@@ -12,3 +12,7 @@
 // 'James Stevens'
 
 const combineNames = (str1, str2) => [str1, str2].join(' ')
+
+// Solution using spread operator
+
+const combineNames = (...names) => names.join(' ')
