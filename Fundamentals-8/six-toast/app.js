@@ -16,3 +16,5 @@
 // And in case of 12 you need 6 toasts less (but not -6):
 
 // six_toast(12) == 6
+
+const sixToast = (num, toast = 6) => Math.abs(num - toast)
