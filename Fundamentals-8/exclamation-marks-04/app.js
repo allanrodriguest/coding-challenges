@@ -12,3 +12,7 @@
 // remove("Hi") === "Hi!"
 
 const remove = str => str.split('!').concat('!').join('')
+
+// Solution using RegEx
+
+const remove = str => `${str.replace(/!/g, '')}!`
