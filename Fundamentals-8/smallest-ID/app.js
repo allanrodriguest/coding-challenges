@@ -20,3 +20,12 @@ function nextId(ids) {
   }
   return ids[ids.length - 1] + 1
 }
+
+// Solution using Set()
+
+function nextId(ids) {
+  const used = new Set(ids)
+  for (let i = 0; i <= ids.length; i++) {
+    if (!used.has(i)) return i
+  }
+}
