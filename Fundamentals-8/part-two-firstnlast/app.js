@@ -27,3 +27,9 @@ function array(arr) {
   answer.shift()
   return answer.join(' ')
 }
+
+// Simplified solution
+
+function array(arr) {
+  return arr.split(',').slice(1, -1).join(' ') || null
+}
