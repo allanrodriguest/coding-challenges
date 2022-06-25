@@ -17,3 +17,13 @@
 // ""     =>  NULL
 // "1"    =>  NULL
 // "1,2"  =>  NULL
+
+function array(arr) {
+  let answer = arr.split(',')
+  if (answer.length < 3) {
+    return null
+  }
+  answer.pop()
+  answer.shift()
+  return answer.join(' ')
+}
