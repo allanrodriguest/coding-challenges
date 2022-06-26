@@ -15,3 +15,15 @@
 // remove("!!!Hi !!hi!!! !hi",3) === "Hi !!hi!!! !hi"
 // remove("!!!Hi !!hi!!! !hi",5) === "Hi hi!!! !hi"
 // remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
+
+function remove(s, n) {
+  let counter = 0
+  let str = s.split('')
+  for (let i = 0; i < str.length && counter < n; i++) {
+    if (str[i] == '!') {
+      str[i] = ''
+      counter++
+    }
+  }
+  return str.join('')
+}
