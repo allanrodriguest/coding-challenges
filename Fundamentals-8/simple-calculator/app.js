@@ -30,3 +30,16 @@ function calculator(a, b, sign) {
       return 'unknown value'
   }
 }
+
+// BAD Practice - Solution using eval
+
+function calculator(a, b, sign) {
+  if (sign == '&') {
+    return 'unknown value'
+  }
+  try {
+    return eval(a + sign + b)
+  } catch (e) {
+    return 'unknown value'
+  }
+}
