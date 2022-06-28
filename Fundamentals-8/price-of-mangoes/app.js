@@ -13,3 +13,7 @@ function mango(quantity, price) {
   let extra = Math.floor(quantity / 3)
   return (quantity - extra) * price
 }
+
+// Simplified solution
+
+const mango = (quantity, price) => (quantity - Math.floor(quantity/3)) * price
