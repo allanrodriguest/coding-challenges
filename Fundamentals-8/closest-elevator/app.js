@@ -19,3 +19,9 @@
 // elevator(0, 1, 2); // => "right"
 // elevator(0, 0, 0); // => "right"
 // elevator(0, 2, 1); // => "right"
+
+const elevator = (left, right, call) =>
+  (call === left && left !== right) ||
+  Math.abs(call - left) < Math.abs(call - right)
+    ? 'left'
+    : 'right'
