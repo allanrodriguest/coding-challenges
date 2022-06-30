@@ -11,3 +11,19 @@
 const daysInAMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 const howManydays = month => daysInAMonth[month - 1] 
+
+// Solution 2
+
+function howManydays(month) {
+  switch (month) {
+    case 2:
+      return 28
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      return 30
+    default:
+      return 31
+  }
+}
