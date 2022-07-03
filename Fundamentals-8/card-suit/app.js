@@ -9,3 +9,17 @@
 // ('3♦') -> return 'diamonds'
 // ('3♥') -> return 'hearts'
 // ('3♠') -> return 'spades'
+
+function defineSuit(card) {
+  const suit = card.slice(-1)
+  switch (suit) {
+    case '♣':
+      return 'clubs'
+    case '♦':
+      return 'diamonds'
+    case '♥':
+      return 'hearts'
+    default:
+      return 'spades'
+  }
+}
