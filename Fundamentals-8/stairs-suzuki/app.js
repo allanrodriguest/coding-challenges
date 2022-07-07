@@ -16,3 +16,7 @@ function stairsIn20(s) {
   }
   return totalStairs * 20
 }
+
+// Solution using flat() method
+
+const stairsIn20 = stairs => stairs.flat().reduce((acc, c) => acc + c, 0) * 20
