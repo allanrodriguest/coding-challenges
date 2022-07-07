@@ -8,3 +8,11 @@
 // 20_year_estimate = one_year_total * 20
 
 // You will receive the following data structure representing the stairs Suzuki logged in a year. You will have all data for the entire year so regardless of how it is logged the problem should be simple to solve.
+
+function stairsIn20(s) {
+  let totalStairs = 0
+  for (item of s) {
+    totalStairs += item.reduce((acc, c) => acc + c, 0)
+  }
+  return totalStairs * 20
+}
