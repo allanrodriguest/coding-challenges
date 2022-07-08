@@ -6,3 +6,8 @@
 // Graph
 
 // Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)
+
+function squareArea(A) {
+  let radius = (A * 4) / (2 * Math.PI)
+  return Math.pow(radius, 2)
+}
