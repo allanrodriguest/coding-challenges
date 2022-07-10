@@ -17,3 +17,7 @@ function remove(str) {
   }
   return str
 }
+
+// Solution using RegEx
+
+const remove = s => s.replace(/!+$/, '')
