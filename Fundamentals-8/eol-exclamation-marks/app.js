@@ -10,3 +10,10 @@
 // remove("!Hi!") === "!Hi"
 // remove("Hi! Hi!") === "Hi! Hi"
 // remove("Hi") === "Hi"
+
+function remove(str) {
+  while (str[str.length - 1] == '!') {
+    str = str.slice(0, -1)
+  }
+  return str
+}
