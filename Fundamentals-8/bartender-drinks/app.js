@@ -29,3 +29,15 @@ function getDrinkByProfession(param) {
   let result = param.toLowerCase()
   return drinks.hasOwnProperty(result) ? drinks[result] : drinks.beer
 }
+
+// one Liner solution
+
+const getDrinkByProfession = param =>
+  ({
+    jabroni: `Patron Tequila`,
+    'school counselor': `Anything with Alcohol`,
+    programmer: `Hipster Craft Beer`,
+    'bike gang member': `Moonshine`,
+    politician: `Your tax dollars`,
+    rapper: `Cristal`
+  }[param.toLowerCase()] || `Beer`)
