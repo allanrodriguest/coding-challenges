@@ -10,3 +10,9 @@
 // Return value as boolean values, true for the string to contains "English", false for it does not.
 
 const spEng = sentence => sentence.toLowerCase().includes('english')
+
+// Solution using RegEx
+
+function spEng(s) {
+  return /english/i.test(s)
+}
