@@ -16,3 +16,9 @@ function sumOfDifferences(arr) {
   let sumDiff = [...arr].sort((a, b) => b - a)
   return sumDiff[0] - sumDiff[sumDiff.length - 1]
 }
+
+// Simplified Solution
+
+function sumOfDifferences(arr) {
+  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0
+}
