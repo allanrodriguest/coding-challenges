@@ -8,3 +8,8 @@
 // You can assume all values in the array are numbers.
 
 // Do not use loops. Do not modify input array.
+
+function smallEnough(a, limit) {
+  let result = [...a].filter(el => el > limit)
+  return result.length === 0
+}
