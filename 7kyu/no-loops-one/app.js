@@ -13,3 +13,7 @@ function smallEnough(a, limit) {
   let result = [...a].filter(el => el > limit)
   return result.length === 0
 }
+
+// Solution #2
+
+const smallEnough = (a, limit) => Math.max(...a) <= limit
