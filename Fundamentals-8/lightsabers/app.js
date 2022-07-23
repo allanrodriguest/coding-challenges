@@ -15,3 +15,7 @@
 // "Zach" --> 18
 
 const howManyLightsabersDoYouOwn = name => (name === 'Zach' ? 18 : 0)
+
+// Solution #2
+
+const howManyLightsabersDoYouOwn = name => (name === `Zach`) * 18
