@@ -13,3 +13,5 @@
 
 // "anyone else" --> 0
 // "Zach" --> 18
+
+const howManyLightsabersDoYouOwn = name => (name === 'Zach' ? 18 : 0)
