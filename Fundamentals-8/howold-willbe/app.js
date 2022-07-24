@@ -8,3 +8,14 @@
 // Provide output in this format: For dates in the future: "You are ... year(s) old." For dates in the past: "You will be born in ... year(s)." If the year of birth equals the year requested return: "You were born this very year!"
 
 // "..." are to be replaced by the number, followed and proceeded by a single space. Mind that you need to account for both "year" and "years", depending on the result.
+
+const calculateAge = (a, b) =>
+  b - a == 1
+    ? `You are 1 year old.`
+    : b > a
+    ? `You are ${b - a} years old.`
+    : b === a
+    ? `You were born this very year!`
+    : a - b == 1
+    ? `You will be born in 1 year.`
+    : `You will be born in ${a - b} years.`
