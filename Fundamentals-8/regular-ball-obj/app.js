@@ -9,3 +9,7 @@
 
 // ball1.ballType     //=> "regular"
 // ball2.ballType     //=> "super"
+
+var Ball = function (ballType = 'regular') {
+  this.ballType = ballType
+}
