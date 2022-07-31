@@ -15,3 +15,13 @@ function distinct(a) {
   })
   return result
 }
+
+// Solution using Set
+
+function distinct(a) {
+  return [...new Set(a)]
+}
+
+// Solution using filter
+
+const distinct = a => a.filter((item, index) => a.indexOf(item) === index)
