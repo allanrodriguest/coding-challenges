@@ -26,3 +26,15 @@ function formatMoney(amount) {
 // Solution using toFixed
 
 let formatMoney = amount => `$${amount.toFixed(2)}`
+
+// Best practice solution when returning $money
+
+function formatMoney(amount) {
+  const usd = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    useGrouping: false
+  })
+  return usd.format(amount)
+}
