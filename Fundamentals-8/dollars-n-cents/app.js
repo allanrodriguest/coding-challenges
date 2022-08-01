@@ -11,3 +11,14 @@
 
 // 3 needs to become $3.00
 // 3.1 needs to become $3.10
+
+function formatMoney(amount) {
+  let result = amount.toString()
+  if (result.indexOf('.') < 0) {
+    return `$${result}.00`
+  } else if (result.indexOf('.') + 2 == result.length) {
+    return `$${result}0`
+  } else {
+    return `$${result}`
+  }
+}
