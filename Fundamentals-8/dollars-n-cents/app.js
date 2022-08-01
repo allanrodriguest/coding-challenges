@@ -22,3 +22,7 @@ function formatMoney(amount) {
     return `$${result}`
   }
 }
+
+// Solution using toFixed
+
+let formatMoney = amount => `$${amount.toFixed(2)}`
