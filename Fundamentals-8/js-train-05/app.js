@@ -20,3 +20,5 @@
 // When you have finished the work, click "Run Tests" to see if your code is working properly.
 
 // In the end, click "Submit" to submit your code pass this kata.
+
+const animal = obj => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
