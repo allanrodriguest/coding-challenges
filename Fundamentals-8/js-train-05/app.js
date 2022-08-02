@@ -22,3 +22,11 @@
 // In the end, click "Submit" to submit your code pass this kata.
 
 const animal = obj => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+
+// using obj destructure
+
+function animal(obj) {
+  const { color, legs, name } = obj
+
+  return `This ${color} ${name} has ${legs} legs.`
+}
