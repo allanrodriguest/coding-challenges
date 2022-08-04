@@ -13,3 +13,9 @@
 const arrayMadness = (a, b) =>
   [...a].map(el => el ** 2).reduce((acc, c) => acc + c, 0) >
   [...b].map(el => el ** 3).reduce((acc, c) => acc + c, 0)
+
+
+// Simplified solution
+
+const arrayMadness = (a, b) =>
+  a.reduce((acc, x) => acc + x ** 2, 0) > b.reduce((acc, x) => acc + x ** 3, 0) 
