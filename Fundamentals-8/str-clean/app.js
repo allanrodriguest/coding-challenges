@@ -15,3 +15,7 @@ function stringClean(s) {
     .filter(n => n != parseInt(n))
     .join('')
 }
+
+// Solution using RegEx
+
+const stringClean = str => str.replace(/\d/g, '')
