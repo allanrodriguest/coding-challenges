@@ -8,3 +8,6 @@
 // For example, if a bottle cost £10 normally and the discount in duty free was 10%, you would save £1 per bottle. If your holiday cost £500, the answer you should return would be 500.
 
 // All inputs will be integers. Please return an integer. Round down.
+
+const dutyFree = (normPrice, discount, hol) =>
+  Math.floor(hol / ((normPrice * discount) / 100))
