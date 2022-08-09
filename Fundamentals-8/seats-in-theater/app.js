@@ -34,3 +34,10 @@
 
 const seatsInTheater = (nCols, nRows, col, row) =>
   (nCols - col) * (nRows - row) + (nRows - row)
+
+
+// Simplified solution
+
+function seatsInTheater(nCols, nRows, col, row) {
+  return (nCols - col + 1) * (nRows - row)
+}
