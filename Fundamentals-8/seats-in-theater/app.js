@@ -31,3 +31,6 @@
 
 // [output] an integer
 // The number of people who sit strictly behind you and in your column or to the left.
+
+const seatsInTheater = (nCols, nRows, col, row) =>
+  (nCols - col) * (nRows - row) + (nRows - row)
