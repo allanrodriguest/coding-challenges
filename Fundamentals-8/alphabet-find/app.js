@@ -11,3 +11,8 @@ const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 const position = letter =>
   `Position of alphabet: ${alphabet.indexOf(letter) + 1}`
+
+// Solution only works for lowerCase letters
+
+
+const position = letter => `Position of alphabet: ${letter.charCodeAt() - 96}`
