@@ -6,3 +6,8 @@
 // Input :: "a"
 
 // Ouput :: "Position of alphabet: 1"
+
+const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+const position = letter =>
+  `Position of alphabet: ${alphabet.indexOf(letter) + 1}`
