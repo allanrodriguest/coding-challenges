@@ -6,3 +6,5 @@
 // If you need help, here's a reference:
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+
+const take = (arr, n) => [...arr].slice(0, n)
