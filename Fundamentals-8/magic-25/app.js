@@ -8,3 +8,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
 const take = (arr, n) => [...arr].slice(0, n)
+
+// solution using filter
+
+const take = (arr, n) => arr.filter((el, index) => index < n)
