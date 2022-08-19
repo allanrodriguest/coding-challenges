@@ -13,8 +13,12 @@
 
 const replaceDots = str => str.split('.').join('-')
 
-// using replaceAll
+// Solution using replaceAll
 
 const replaceDots = function (str) {
   return str.replaceAll('.', '-')
 }
+
+// solution using regex
+
+const replaceDots = str => str.replace(/\./g, '-')
