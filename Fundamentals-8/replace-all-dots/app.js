@@ -12,3 +12,9 @@
 // String str will never be null.
 
 const replaceDots = str => str.split('.').join('-')
+
+// using replaceAll
+
+const replaceDots = function (str) {
+  return str.replaceAll('.', '-')
+}
