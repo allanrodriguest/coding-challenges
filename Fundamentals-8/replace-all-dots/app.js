@@ -10,3 +10,5 @@
 
 // Notes
 // String str will never be null.
+
+const replaceDots = str => str.split('.').join('-')
