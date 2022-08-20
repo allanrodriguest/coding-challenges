@@ -8,3 +8,7 @@
 // The arguments will always be non empty strings, and normal letters.
 
 const correctTail = (body, tail) => body[body.length - 1] === tail
+
+// solution using endsWith
+
+const correctTail = (x, y) => x.endsWith(y)
