@@ -6,3 +6,5 @@
 // If the tail is right return true, else return false.
 
 // The arguments will always be non empty strings, and normal letters.
+
+const correctTail = (body, tail) => body[body.length - 1] === tail
