@@ -13,4 +13,15 @@
 // -1050 -> -105
 // Zero alone is fine, don't worry about it. Poor guy anyway
 
+// Solution using Regex
+
 const noBoringZeros = n => +`${n}`.replace(/0+$/, '')
+
+// Solution number 2
+
+function noBoringZeros(n) {
+  while (n % 10 == 0 && n != 0) {
+    n /= 10
+  }
+  return n
+}
