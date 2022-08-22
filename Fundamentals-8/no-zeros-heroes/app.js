@@ -12,3 +12,5 @@
 // 1050 -> 105
 // -1050 -> -105
 // Zero alone is fine, don't worry about it. Poor guy anyway
+
+const noBoringZeros = n => +`${n}`.replace(/0+$/, '')
