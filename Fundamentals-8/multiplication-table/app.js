@@ -24,3 +24,22 @@ function multiTable(number) {
     .map(item => `${item} * ${number} = ${item * number}`)
     .join('\n')
 }
+
+// using Array constructor
+
+function multiTable(n) {
+  return [...Array(10)]
+    .map((_, i) => `${i + 1} * ${n} = ${n * i + n}`)
+    .join('\n')
+}
+
+// using push()
+
+function multiTable(number) {
+  let builder = []
+  for (let i = 1; i <= 10; ++i)
+    builder.push(i, ' * ', number, ' = ', i * number, '\n')
+
+  builder.pop()
+  return builder.join('')
+}
