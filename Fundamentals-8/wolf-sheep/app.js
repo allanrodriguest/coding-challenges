@@ -17,3 +17,12 @@
 
 // Input: ["sheep", "sheep", "wolf"]
 // Output: "Pls go away and stop eating my sheep"
+
+function warnTheSheep(queue) {
+  let wolf = queue.indexOf('wolf')
+  return wolf + 1 === queue.length
+    ? 'Pls go away and stop eating my sheep'
+    : `Oi! Sheep number ${
+        queue.length - wolf - 1
+      }! You are about to be eaten by a wolf!`
+}
