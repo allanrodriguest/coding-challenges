@@ -26,3 +26,11 @@ function tripleTrouble(one, two, three) {
   }
   return str
 }
+
+// Solution using map
+
+const tripleTrouble = (one, two, three) =>
+  one
+    .split('')
+    .map((item, index) => item + two[index] + three[index])
+    .join('')
