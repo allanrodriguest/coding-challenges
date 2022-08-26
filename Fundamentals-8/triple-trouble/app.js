@@ -16,3 +16,13 @@ function tripleTrouble(one, two, three) {
   }
   return answer.join('')
 }
+
+// Shorter solution
+
+function tripleTrouble(one, two, three) {
+  var str = ''
+  for (var i = 0; i < one.length; i++) {
+    str += one[i] + two[i] + three[i]
+  }
+  return str
+}
