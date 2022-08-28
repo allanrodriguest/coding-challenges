@@ -10,3 +10,5 @@
 // "Hello World" --> "World Hello"
 // "Hi There." --> "There. Hi"
 // Happy coding!
+
+const reverse = str => str.split(' ').reverse().join(' ')
