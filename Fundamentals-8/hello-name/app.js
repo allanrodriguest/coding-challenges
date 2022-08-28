@@ -16,3 +16,19 @@ const hello = name =>
   `Hello, ${
     name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : 'World'
   }!`
+
+
+// Solution using substring
+
+function hello(name) {
+  if (name) {
+    return (
+      'Hello, ' +
+      name.substring(0, 1).toUpperCase() +
+      name.substring(1).toLowerCase() +
+      '!'
+    )
+  } else {
+    return 'Hello, World!'
+  }
+}
