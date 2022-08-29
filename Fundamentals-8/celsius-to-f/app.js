@@ -22,3 +22,15 @@ function weatherInfo(temp) {
     c > 0 ? 'is above freezing temperature' : 'is freezing temperature'
   }`
 }
+
+// shorter solution
+
+const weatherInfo = t =>
+  `${(t = (t - 32) * (5 / 9))} is ${t > 0 ? 'above ' : ''}freezing temperature`
+
+// Solution using  IIFE (Immediately Invoked Function Expression) 
+
+const weatherInfo = temp =>
+  (val => `${val} is ${val > 0 ? `above ` : ``}freezing temperature`)(
+    (temp - 32) * (5 / 9)
+  )
