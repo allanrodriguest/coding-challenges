@@ -16,3 +16,10 @@ function replace(s) {
     .map(item => (vowels.includes(item) ? '!' : item))
     .join('')
 }
+
+// Solution using regex
+
+function replace(s) {
+  return s.replace(/[aeoiu]/gi, '!')
+}
+
