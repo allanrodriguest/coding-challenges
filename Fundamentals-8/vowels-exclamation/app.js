@@ -8,3 +8,11 @@
 // replace("!Hi! Hi!") === "!H!! H!!"
 // replace("aeiou") === "!!!!!"
 // replace("ABCDE") === "!BCD!"
+
+function replace(s) {
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  return s
+    .split('')
+    .map(item => (vowels.includes(item) ? '!' : item))
+    .join('')
+}
