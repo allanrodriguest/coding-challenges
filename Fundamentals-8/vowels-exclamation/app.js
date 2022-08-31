@@ -23,3 +23,10 @@ function replace(s) {
   return s.replace(/[aeoiu]/gi, '!')
 }
 
+// Simplified Solution
+
+const replace = w =>
+  w
+    .split('')
+    .map(item => ('aeiou'.includes(item.toLowerCase()) ? '!' : item))
+    .join('')
