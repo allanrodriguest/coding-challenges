@@ -27,3 +27,10 @@ function peopleWithAgeDrink(old) {
   if(old < 21) return 'drink beer'
   return 'drink whisky'
 };
+
+// Simplified solution
+
+const peopleWithAgeDrink = old =>
+  `drink ${
+    old < 14 ? `toddy` : old < 18 ? `coke` : old < 21 ? `beer` : `whisky`
+  }`
