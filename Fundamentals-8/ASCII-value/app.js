@@ -7,5 +7,6 @@
 
 // get_char(65)
 // should return:
-
 // 'A'
+
+const getChar = c => String.fromCharCode(c)
