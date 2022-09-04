@@ -20,3 +20,8 @@ function generateRange(min, max, step) {
   }
   return answer
 }
+
+// One Liner solution
+
+const generateRange = (min, max, step) =>
+  Array.from({ length: (max - min) / step + 1 }, (v, i) => i * step + min)
