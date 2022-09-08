@@ -20,3 +20,9 @@ function mergeArrays(arr1, arr2) {
   }
   return [...new Set([...arr1, ...arr2])].sort((a, b) => a - b)
 }
+
+// Shorter solution
+
+function mergeArrays(a, b) {
+  return [...new Set(a.concat(b))].sort((a, b) => a - b)
+}
