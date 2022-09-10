@@ -20,3 +20,8 @@ function pipeFix(numbers) {
   }
   return answer
 }
+
+// Solution using Array.from
+
+let pipeFix = nums =>
+  Array.from({ length: nums.pop() - nums[0] + 1 }, (v, i) => i + nums[0])
