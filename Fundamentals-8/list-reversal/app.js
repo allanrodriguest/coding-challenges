@@ -8,3 +8,9 @@
 // * [9, 2, 0, 7]  -> [7, 0, 2, 9]
 
 const reverseList = list => list.reverse()
+
+// Using shallow copy to not change the original array
+
+function reverseList(list) {
+  return list.slice().reverse()
+}
