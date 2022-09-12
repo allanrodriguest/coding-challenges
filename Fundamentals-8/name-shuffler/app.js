@@ -8,3 +8,9 @@
 // "john McClane" --> "McClane john"
 
 const nameShuffler = str => str.split(' ').reverse().join(' ')
+
+// solution using regEx
+
+function nameShuffler(str) {
+  return str.replace(/(\S*) (\S*)/g, '$2 $1')
+}
