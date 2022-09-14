@@ -28,3 +28,7 @@ const stringy = x => ''.padStart(x, '10')
 // Solution using repeat and slice()
 
 const stringy = size => '10'.repeat(size).slice(0, size)
+
+// Solution using Array.from
+
+const stringy = size => Array.from(Array(size), (v, i) => +!(i % 2)).join('')
