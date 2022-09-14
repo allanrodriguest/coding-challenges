@@ -24,3 +24,7 @@ function stringy(size) {
 // Solution using padStart
 
 const stringy = x => ''.padStart(x, '10')
+
+// Solution using repeat and slice()
+
+const stringy = size => '10'.repeat(size).slice(0, size)
