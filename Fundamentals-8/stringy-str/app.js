@@ -12,3 +12,11 @@
 // with size 12 should return : '101010101010'.
 
 // The size will always be positive and will only use whole numbers.
+
+function stringy(size) {
+  let answer = ''
+  for (let i = 0; i < size; i++) {
+    i % 2 == 0 ? (answer += '1') : (answer += '0')
+  }
+  return answer
+}
