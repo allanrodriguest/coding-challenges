@@ -20,3 +20,7 @@ function stringy(size) {
   }
   return answer
 }
+
+// Solution using padStart
+
+const stringy = x => ''.padStart(x, '10')
