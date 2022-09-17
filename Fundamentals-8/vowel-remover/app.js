@@ -18,3 +18,9 @@ const shortcut = str => {
     .filter(item => !vowels.includes(item))
     .join('')
 }
+
+// regex solution
+
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, '')
+}
