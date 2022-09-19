@@ -12,3 +12,7 @@
 // remove("Hi") == "Hi"
 
 const remove = str => (str.endsWith('!') ? str.slice(0, -1) : str)
+
+// Solution using RegEx
+
+const remove = s => s.replace(/!$/, '')
