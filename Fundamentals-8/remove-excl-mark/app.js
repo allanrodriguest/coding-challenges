@@ -10,3 +10,5 @@
 // remove("!Hi!") == "!Hi"
 // remove("Hi! Hi!") == "Hi! Hi"
 // remove("Hi") == "Hi"
+
+const remove = str => (str.endsWith('!') ? str.slice(0, -1) : str)
