@@ -12,3 +12,11 @@ function findMultiples(int, limit) {
   }
   return answer
 }
+
+// Beautiful solution
+
+function findMultiples(int, limit) {
+  return Array(Math.floor(limit / int))
+    .fill(1)
+    .map((x, i) => int * (i + 1))
+}
