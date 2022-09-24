@@ -10,3 +10,9 @@ function getCount(str) {
   const vowels = ['a', 'e', 'i', 'o', 'u']
   return str.split('').filter(item => vowels.includes(item)).length
 }
+
+// RegEx solution
+
+function getCount(str) {
+  return (str.match(/[aeiou]/gi) || []).length
+}
