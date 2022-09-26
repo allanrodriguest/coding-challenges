@@ -9,3 +9,8 @@
 
 
 const unusualFive = _ => 'Fivey'.length
+
+
+// Solution using Math() methods
+
+const unusualFive = () => Math.hypot(Math.ceil(Math.PI), Math.floor(Math.PI))
