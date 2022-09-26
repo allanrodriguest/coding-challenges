@@ -7,4 +7,5 @@
 
 // Good luck :)
 
-// RESTRICTEDFUNDAMENTALSPUZZLES
+
+const unusualFive = _ => 'Fivey'.length
