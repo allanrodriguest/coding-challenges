@@ -23,3 +23,9 @@ String.prototype.isUpperCase = function () {
 String.prototype.isUpperCase = function () {
   return this.toUpperCase() === this.toString()
 }
+
+// Solution using RegEx
+
+String.prototype.isUpperCase = function () {
+  return !/[a-z]/.test(this)
+}
