@@ -17,3 +17,9 @@
 String.prototype.isUpperCase = function () {
   return this.split('').filter(item => item !== item.toUpperCase()).length === 0
 }
+
+// Shorter solution
+
+String.prototype.isUpperCase = function () {
+  return this.toUpperCase() === this.toString()
+}
