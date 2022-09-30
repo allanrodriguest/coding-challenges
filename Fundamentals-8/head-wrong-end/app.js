@@ -9,3 +9,9 @@
 // Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics
 
 const fixTheMeerkat = arr => arr.reverse()
+
+// Not modifying the source array
+
+const fixTheMeerkat = ([tail, body, head]) => [head, body, tail]
+
+// Using spread operator
