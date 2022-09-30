@@ -14,4 +14,6 @@ const fixTheMeerkat = arr => arr.reverse()
 
 const fixTheMeerkat = ([tail, body, head]) => [head, body, tail]
 
-// Using spread operator
+// Using spread operator also not modify the source array
+
+const fixTheMeerkat = arr => [...arr].reverse() 
