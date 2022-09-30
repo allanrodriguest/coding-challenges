@@ -20,3 +20,9 @@
 function sumStr(a, b) {
   return String(+a + +b)
 }
+
+// Clever Solution
+
+function sumStr(a, b) {
+  return +a + +b + ''
+}
