@@ -76,3 +76,9 @@ function greet(language) {
       return 'Welcome'
   }
 }
+
+// The solution could be done with OR
+
+function greet(lang) {
+  return langs[lang] || langs['english']
+}
