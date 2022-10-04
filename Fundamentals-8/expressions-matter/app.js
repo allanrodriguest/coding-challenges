@@ -22,3 +22,9 @@ function expressionMatter(a, b, c) {
   let answer5 = a + b + c
   return Math.max(answer1, answer2, answer3, answer4, answer5)
 }
+
+// Simplified solution
+
+function expressionMatter(a, b, c) {
+  return Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c))
+}
