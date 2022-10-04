@@ -13,3 +13,12 @@
 // 1 + 2 * 3 = 7
 // (1 + 2) * 3 = 9
 // So the maximum value that you can obtain is 9.
+
+function expressionMatter(a, b, c) {
+  let answer1 = a * (b + c)
+  let answer2 = a * b * c
+  let answer3 = a + b * c
+  let answer4 = (a + b) * c
+  let answer5 = a + b + c
+  return Math.max(answer1, answer2, answer3, answer4, answer5)
+}
