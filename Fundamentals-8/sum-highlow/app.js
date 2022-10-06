@@ -21,3 +21,15 @@ function sumArray(array) {
   array.shift()
   return array.reduce((acc, c) => acc + c, 0)
 }
+
+// Solution using slice
+
+function sumArray(a) {
+  return a == null || a.length < 3
+    ? 0
+    :
+      a
+        .sort((a, b) => a - b)
+        .slice(1, -1)
+        .reduce((a, b) => a + b, 0)
+}
