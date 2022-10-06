@@ -33,3 +33,11 @@ function sumArray(a) {
         .slice(1, -1)
         .reduce((a, b) => a + b, 0)
 }
+
+// Solution using Math.max and Math.min
+
+function sumArray(array) {
+  return Array.isArray(array) && array.length > 1
+    ? array.reduce((s, n) => s + n, 0) - Math.min(...array) - Math.max(...array)
+    : 0
+}
