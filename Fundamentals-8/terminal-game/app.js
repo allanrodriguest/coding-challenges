@@ -11,3 +11,22 @@
 // move(3, 6) should equal 15
 
 const move = (p, d) => p + d * 2
+
+// (Had to Share SolutioN)
+
+const move = (_, $, _$) => _ + [(_$ = -~[]), ++_$][-~[]] * $
+
+// Let's break -~[] down first.
+
+// [], when converted to a number, is 0.
+
+// ~ is a bitwise operator that inverts the bits of a number, what it basically does is -(x + 1).
+// So in this case 0 becomes -1, because -(0 + 1) === -1.
+
+// The - cancels the - that -1 already has, so it becomes 1.
+
+// Translated, this function means:
+
+// const move = (pos, roll, num) => (pos + [num = 1, ++num][1] * roll);
+// ...or const move = (pos, roll) => pos + [1, 2][1] * roll;
+// ...or const move = (pos, roll) => pos + 2 * roll;
