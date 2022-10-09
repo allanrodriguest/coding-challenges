@@ -9,3 +9,5 @@
 
 // Example:
 // move(3, 6) should equal 15
+
+const move = (p, d) => p + d * 2
