@@ -8,3 +8,5 @@
 // Example output:
 
 // Hello, Mr. Spock
+
+const sayHello = _ => `Hello, ${_}`
