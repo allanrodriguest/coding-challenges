@@ -10,3 +10,9 @@
 // Hello, Mr. Spock
 
 const sayHello = _ => `Hello, ${_}`
+
+// Hard challenge tho
+
+const sayHello = function (name) {
+  return ['Hello', name].join(', ')
+}
