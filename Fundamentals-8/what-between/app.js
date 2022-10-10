@@ -9,3 +9,11 @@
 // a = 1
 // b = 4
 // --> [1, 2, 3, 4]
+
+function between(a, b) {
+  let inBetween = []
+  for (let i = a; i <= b; i++) {
+    inBetween.push(i)
+  }
+  return inBetween
+}
