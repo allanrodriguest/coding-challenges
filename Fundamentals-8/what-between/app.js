@@ -21,3 +21,7 @@ function between(a, b) {
 // Solution using Array object
 
 const between = (a, b) => Array.from(new Array(b - a + 1), (_, i) => a + i)
+
+// solution using the spread operator
+
+const between = (a, b) => [...Array(b - a + 1)].map((_, idx) => idx + a)
