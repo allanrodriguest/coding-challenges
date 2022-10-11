@@ -19,4 +19,11 @@ function gooseFilter (birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   
   return birds.filter(item => !geese.includes(item))
+}
+
+// Solution using indexOf
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter( bird => geese.indexOf(bird) < 0 );
 };
