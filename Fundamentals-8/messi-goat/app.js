@@ -17,3 +17,7 @@
 // 5, 10, 2  -->  17
 
 const goals = (go, a, t) => go + a + t
+
+// feeling fancy
+
+const goals = (...a) => a.reduce((s, v) => s + v, 0)
