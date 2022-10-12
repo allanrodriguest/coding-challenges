@@ -15,3 +15,5 @@
 // For example:
 
 // 5, 10, 2  -->  17
+
+const goals = (go, a, t) => go + a + t
