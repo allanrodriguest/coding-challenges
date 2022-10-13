@@ -11,3 +11,7 @@
 function twoSort(s) {
   return s.sort()[0].split('').join('***')
 }
+
+// Solution using spread operator to not change the original string
+
+const twoSort = s => [...s.sort()[0]].join('***')
