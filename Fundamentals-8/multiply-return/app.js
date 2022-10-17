@@ -1,0 +1,1 @@
+// Receive 2 numbers and return the multiplication
