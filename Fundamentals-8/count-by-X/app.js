@@ -9,3 +9,15 @@
 // countBy(2,5) === [2,4,6,8,10]
 
 // First Solution
+
+function countBy(x, n) {
+  let z = []
+  for (let i = 1; i <= n; i++) {
+    z.push(x * i)
+  }
+  return z
+}
+
+// Fancy solution
+
+const countBy = (x, n) => Array.from({ length: n }, (v, k) => (k + 1) * x)
