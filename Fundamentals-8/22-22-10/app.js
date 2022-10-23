@@ -7,3 +7,7 @@
 // n=-5, m=5:  0
 
 // First Solution
+
+function paperwork(n, m) {
+  return n < 0 || m < 0 ? 0 : n * m
+}
