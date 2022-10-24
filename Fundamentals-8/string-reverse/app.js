@@ -5,3 +5,10 @@
 
 // 1st solution
 
+function solution(str) {
+  return str.split('').reverse().join('')
+}
+
+// Clever solution
+
+const solution = s => [...s].reverse().join('')
