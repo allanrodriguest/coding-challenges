@@ -1,2 +1,2 @@
 # coding-challenges
-Solutions for coding challenges of 100Devs
+Here I share my Javascript solutions for coding challenges of 100Devs
