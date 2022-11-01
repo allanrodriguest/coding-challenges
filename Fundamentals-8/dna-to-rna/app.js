@@ -18,3 +18,13 @@ function DNAtoRNA(dna) {
     .map(item => (item === 'T' ? (item = 'U') : item))
     .join('')
 }
+
+// Solution using RegEx
+
+const DNAtoRNA = dna => dna.replace(/T/g, 'U')
+
+// Clever solution using only split() and join()
+
+function DNAtoRNA(dna) {
+  return dna.split('T').join('U')
+}
