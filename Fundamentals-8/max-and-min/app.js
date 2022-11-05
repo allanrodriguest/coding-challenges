@@ -13,3 +13,13 @@
 
 const min = list => Math.min(...list)
 const max = list => Math.max(...list)
+
+// Math.min or Math.max doesn't work on arrays, so we borrow it using function method .apply(). You need to pass two things for apply() to work, first is pointer to "this", we don't need it in this example so null, and second is values. Apply allows you to pass values as an array, unlike almost identical call().
+
+var min = function (list) {
+  return Math.min.apply(null, list)
+}
+
+var max = function (list) {
+  return Math.max.apply(null, list)
+}
