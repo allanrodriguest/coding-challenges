@@ -10,3 +10,6 @@
 // * [5]                             -> min = 5, max = 5
 // Notes
 // You may consider that there will not be any empty arrays/vectors.
+
+const min = list => Math.min(...list)
+const max = list => Math.max(...list)
