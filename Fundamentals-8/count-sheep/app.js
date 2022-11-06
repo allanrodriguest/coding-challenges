@@ -17,3 +17,12 @@ var countSheep = function (num) {
   }
   return result
 }
+
+// Solution using Array.from
+
+const countSheep = length =>
+  Array.from({ length }, (_, i) => ++i + ' sheep...').join('')
+
+// Solution using .keys and map()
+
+countSheep = n => [...Array(n).keys()].map(x => `${x + 1} sheep...`).join``
