@@ -8,3 +8,16 @@
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
 const smash = words => words.join(' ')
+
+// Solution without method
+
+function smash (words) {
+    var smashed = '';
+    for(var i = 0; i<words.length; i++) {
+      smashed += words[i];
+      if(i!=words.length-1) {
+        smashed += ' ';
+      }
+    }
+    return smashed;
+};
