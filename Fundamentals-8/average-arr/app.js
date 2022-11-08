@@ -9,3 +9,7 @@
 
 const getAverage = marks =>
   Math.floor(marks.reduce((acc, c) => acc + c, 0) / marks.length)
+
+// Double bitwise NOT ~~ is performed on the average as a more compact approximation to the Math.floor method.
+
+const getAverage = marks => ~~(marks.reduce((s, v) => s + v) / marks.length)
