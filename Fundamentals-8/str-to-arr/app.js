@@ -8,8 +8,23 @@
 
 // "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
 
-function arrayPlusArray(arr1, arr2) {
-  return (
-    arr1.reduce((acc, c) => acc + c, 0) + arr2.reduce((acc, c) => acc + c, 0)
-  )
+const stringToArray = str => str.split(' ')
+
+// Solution without using split() method
+
+function stringToArray(string) {
+  var result = []
+  var traverse = function foo(string) {
+    for (var i = 0; i < string.length; i++) {
+      var chr = string.charAt(i)
+      if (chr === ' ') {
+        result.push(string.slice(0, i))
+        foo(string.slice(i + 1))
+        return
+      }
+    }
+    result.push(string)
+  }
+  traverse(string)
+  return result
 }
