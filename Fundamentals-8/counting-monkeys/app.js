@@ -13,3 +13,9 @@
 
 const monkeyCount = numOfMonkeys =>
   Array.from({ length: numOfMonkeys }, (v, i) => i + 1)
+
+// Add Solution using keys and slice()
+
+function monkeyCount(n) {
+  return [...Array(n + 1).keys()].slice(1)
+}
