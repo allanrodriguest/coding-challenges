@@ -13,3 +13,7 @@
 function bonusTime(salary, bonus) {
   return `£` + (bonus ? salary * 10 : salary)
 }
+
+// Optmized Solution
+
+const bonusTime = (salary, bonus) => `£${bonus ? salary * 10 : salary}`
