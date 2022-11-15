@@ -7,3 +7,7 @@
 // Return your answer as a number.
 
 const sumMix = arr => arr.map(item => +item).reduce((acc, c) => acc + c, 0)
+
+// Doesn't need to map()
+
+const sumMix = arr => arr.reduce((acc,c) => acc + +c, 0);
