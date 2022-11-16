@@ -20,3 +20,15 @@ function getGrade(s1, s2, s3) {
   else if (answer < 90) return 'B'
   else return 'A'
 }
+
+// WTF Solution
+
+getGrade = (a, b, c) => 'FFFFFFDCBAA'[~~((a + b + c) / 30)]
+
+
+// Readable
+
+var getGrade = (a, b, c) => 'FFFFFFDCBAA'.charAt((a + b + c) / 3 / 10)
+
+
+
