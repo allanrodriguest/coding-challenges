@@ -10,3 +10,4 @@
 // name equals owner	'Hello boss'
 // otherwise	'Hello guest'
 
+const greet = (name, owner) => `Hello ${name === owner ? 'boss' : 'guest'}`
