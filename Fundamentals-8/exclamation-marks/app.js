@@ -7,3 +7,9 @@
 function removeExclamationMarks(s) {
   return s.replaceAll('!', '')
 }
+
+// Using split() join()
+
+function removeExclamationMarks(s) {
+  return s.split('!').join('')
+}
