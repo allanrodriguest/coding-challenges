@@ -16,3 +16,7 @@ const quarterOf = month => {
   else if (month <= 9) return 3
   else return 4
 }
+
+// Solution using math.ceil()
+
+const quarterOf = m => Math.ceil(m / 3)
