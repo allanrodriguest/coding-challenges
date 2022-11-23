@@ -16,3 +16,12 @@ function updateLight(current) {
   }
   return answer[current]
 }
+
+// Simplified Solution
+
+const updateLight = current =>
+  ({
+    green: 'yellow',
+    yellow: 'red',
+    red: 'green'
+  }[current])
