@@ -10,3 +10,5 @@
 // setAlarm(false, true) -> false
 // setAlarm(false, false) -> false
 // setAlarm(true, false) -> true
+
+const setAlarm = (employed, vacation) => employed && !vacation
