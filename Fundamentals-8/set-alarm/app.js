@@ -12,3 +12,9 @@
 // setAlarm(true, false) -> true
 
 const setAlarm = (employed, vacation) => employed && !vacation
+
+// Interesting Solution
+
+function setAlarm(employed, vacation) {
+  return employed > vacation
+}
