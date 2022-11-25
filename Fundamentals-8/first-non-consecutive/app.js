@@ -22,3 +22,10 @@
 // Python, Rust, Scala: None
 // Julia: nothing
 // Nim: none(int) (See options)
+
+function firstNonConsecutive(arr) {
+  for (let i = arr[0], j = 0; j < arr.length && arr.length >= 2; i++, j++) {
+    if (i !== arr[j]) return arr[j]
+  }
+  return null
+}
