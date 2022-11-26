@@ -10,3 +10,7 @@
 // Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
 
 const cockroachSpeed = s => Math.floor(27.7778 * s)
+
+// Solution using OR to convert left side float to 32-bit signed interger
+
+const cockroachSpeed = s => (s / 0.036) | 0
