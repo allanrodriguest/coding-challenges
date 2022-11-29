@@ -36,3 +36,15 @@ function points(games) {
   }
   return teamAscore
 }
+
+// Cleaner Solution
+
+const points = games =>
+  games.reduce((output, current) => {
+    return (output +=
+      current[0] > current[2] ? 3 : current[0] === current[2] ? 1 : 0)
+  }, 0)
+
+// Clever Solution using reduce()
+
+const points = g => g.reduce((a, [x, _, y]) => a + (x > y ? 3 : x == y), 0)
