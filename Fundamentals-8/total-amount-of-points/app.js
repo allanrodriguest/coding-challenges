@@ -20,3 +20,19 @@
 // our team always plays 10 matches in the championship
 // 0 <= x <= 4
 // 0 <= y <= 4
+
+function points(games) {
+  let score = games
+    .join(':')
+    .split('')
+    .map(item => +item)
+  let teamAscore = 0
+  for (let i = 0, j = 2; i < score.length; i += 4, j += 4) {
+    score[i] > score[j]
+      ? (teamAscore += 3)
+      : score[i] === score[j]
+      ? teamAscore++
+      : (teamAscore += 0)
+  }
+  return teamAscore
+}
