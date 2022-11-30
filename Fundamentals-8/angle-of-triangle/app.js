@@ -11,3 +11,10 @@
 // https://en.wikipedia.org/wiki/Triangle
 
 const otherAngle = (a, b) => 180 - a - b
+
+// Ensuring the inputs
+
+function otherAngle(a, b) {
+  if (a < 0 || b < 0 || a + b >= 180) return 0
+  return 180 - a - b
+}
