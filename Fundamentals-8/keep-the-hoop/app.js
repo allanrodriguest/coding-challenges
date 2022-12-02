@@ -11,3 +11,12 @@
 
 const hoopCount = _ =>
   _ >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it'
+
+// Solution validating the input
+
+function hoopCount(n) {
+  if (typeof n != 'number') return 'Please type a valid number.'
+  return n >= 10
+      ? 'Great, now move on to tricks'
+      : 'Keep at it until you get it'
+}
