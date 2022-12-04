@@ -10,3 +10,10 @@
 
 const twiceAsOld = (dadYearsOld, sonYearsOld) =>
   Math.max(sonYearsOld * 2 - dadYearsOld, dadYearsOld - sonYearsOld * 2)
+
+
+// Better approach using math.abs
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld)
+}
