@@ -22,3 +22,19 @@ function switchItUp(number) {
     9: 'Nine'
   }[number]
 }
+
+// Same logic but using array
+
+switchItUp = n =>
+  [
+    'Zero',
+    'One',
+    'Two',
+    'Three',
+    'Four',
+    'Five',
+    'Six',
+    'Seven',
+    'Eight',
+    'Nine'
+  ][n]
