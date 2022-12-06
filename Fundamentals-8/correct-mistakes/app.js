@@ -25,3 +25,14 @@ function correct(string) {
     )
     .join('')
 }
+
+// Add Solution using regEx
+
+const corrections = {
+  5: 'S',
+  0: 'O',
+  1: 'I'
+}
+
+const correct = string =>
+  string.replace(/[501]/g, character => corrections[character])
