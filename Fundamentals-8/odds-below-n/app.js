@@ -13,3 +13,6 @@ function oddCount(n) {
   ).length
 }
 
+// Simplier Solution
+
+const oddCount = n => Math.floor(n / 2)
