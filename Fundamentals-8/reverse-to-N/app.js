@@ -13,3 +13,13 @@ const reverseSeq = n => {
   }
   return reverse
 }
+
+// Solution using .fill and .map
+
+const reverseSeq = n => {
+  return Array(n).fill(0).map((e, i) => n - i );
+};
+
+// Solution using Array.from()
+
+const reverseSeq = length => Array.from({length}, () => length--)
