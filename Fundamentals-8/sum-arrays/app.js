@@ -24,3 +24,9 @@
 const sum = numbers => {
   return numbers.reduce((acc, total) => acc + total, 0) || 0
 }
+
+// Using Recursion
+
+function sum (numbers) {
+    return numbers.length == 0 ? 0 : numbers.shift() + sum(numbers);
+};
