@@ -10,3 +10,9 @@
 function check(arr, item) {
   return arr.includes(item)
 }
+
+// Solution using indexOf
+
+function check(a,x){
+  return a.indexOf(x) > -1;
+};
