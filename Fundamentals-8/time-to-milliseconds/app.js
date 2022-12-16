@@ -18,7 +18,7 @@
 
 const past = (hrs, min, sec) => (hrs * 60 * 60 + min * 60 + sec) * 1000
 
-// Solution using Date.now()
+// Solution using Date object
 
 function past(h, m, s) {
   const setTime = new Date().setHours(h, m, s)
