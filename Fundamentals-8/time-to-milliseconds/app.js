@@ -16,3 +16,4 @@
 // 0 <= m <= 59
 // 0 <= s <= 59
 
+const past = (hrs, min, sec) => (hrs * 60 * 60 + min * 60 + sec) * 1000
