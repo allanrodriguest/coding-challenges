@@ -17,3 +17,12 @@
 // 0 <= s <= 59
 
 const past = (hrs, min, sec) => (hrs * 60 * 60 + min * 60 + sec) * 1000
+
+// Solution using Date.now()
+
+function past(h, m, s) {
+  const setTime = new Date().setHours(h, m, s)
+  const midnight = new Date().setHours(0, 0, 0)
+
+  return Math.round(setTime - midnight)
+}
