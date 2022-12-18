@@ -12,3 +12,9 @@
 // Example(Input --> Output)
 
 // ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
+
+function findNeedle(haystack) {
+  return haystack.indexOf('needle')
+    ? `found the needle at position ${haystack.indexOf('needle')}`
+    : `Your function didn't return anything`
+}
