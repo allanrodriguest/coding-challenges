@@ -10,3 +10,7 @@
 // 1900 --> 19
 // 1601 --> 17
 // 2000 --> 20
+
+// Math.ceil() Solution
+
+const century = year => Math.ceil(year / 100)
