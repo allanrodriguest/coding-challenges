@@ -14,3 +14,18 @@
 // Math.ceil() Solution
 
 const century = year => Math.ceil(year / 100)
+
+
+// Bitwise Insane Solution
+
+const century = year =>
+  (n =>
+    (p => (q => q + (n - q * 100 > 99))((p + (p >> 20)) >> 6))(
+      (n >> 1) +
+        (n >> 3) +
+        (n >> 6) -
+        (n >> 10) +
+        (n >> 12) +
+        (n >> 13) -
+        (n >> 16)
+    ))(year + 99)
