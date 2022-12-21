@@ -24,3 +24,9 @@ function basicOp(operation, value1, value2) {
       return
   }
 }
+
+// Dangerous & Interesting Solution
+
+function basicOp(o, a, b) {
+  return eval(a + o + b)
+}
