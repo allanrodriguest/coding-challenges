@@ -13,3 +13,8 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
+const countSheeps = arr => {
+  let sheeps = 0
+  arr.map(x => (x ? sheeps++ : console.log('BEEEH')))
+  return sheeps
+}
