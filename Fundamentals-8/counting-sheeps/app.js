@@ -18,3 +18,9 @@ const countSheeps = arr => {
   arr.map(x => (x ? sheeps++ : console.log('BEEEH')))
   return sheeps
 }
+
+// FANCY SOLUTION
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length
+}
