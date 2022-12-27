@@ -16,3 +16,9 @@ function oddCount(n) {
 // Simplier Solution
 
 const oddCount = n => Math.floor(n / 2)
+
+// Could be using parseInt too
+
+function oddCount(n) {
+return parseInt(n / 2)
+}
