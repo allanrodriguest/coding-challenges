@@ -24,3 +24,9 @@ const strCount = (str, letter) =>
 function strCount(str, letter) {
   return str.split(letter).length - 1
 }
+
+// Split is not recommended since initiates new istances of Array for each match
+
+function strCount(str, letter) {
+  return str.match(/o/g) || [].length
+}
