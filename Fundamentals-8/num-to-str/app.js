@@ -8,3 +8,4 @@
 // 999  --> "999"
 // -100 --> "-100"
 
+const numberToString = num => String(num)
