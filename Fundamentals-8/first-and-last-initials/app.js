@@ -15,3 +15,12 @@ const abbrevName = str => {
   let lastName = str.substring(whitespace + 1)
   return `${str[0]}.${lastName[0]}`.toUpperCase()
 }
+
+// Solution using split and map
+
+function abbrevName(name) {
+  return name
+    .split(' ')
+    .map(i => i[0].toUpperCase())
+    .join('.')
+}
