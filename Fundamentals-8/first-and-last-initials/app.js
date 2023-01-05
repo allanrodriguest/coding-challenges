@@ -10,3 +10,8 @@
 
 // patrick feeney => P.F
 
+const abbrevName = str => {
+  let whitespace = str.indexOf(' ')
+  let lastName = str.substring(whitespace + 1)
+  return `${str[0]}.${lastName[0]}`.toUpperCase()
+}
