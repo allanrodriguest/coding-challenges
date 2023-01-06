@@ -16,3 +16,7 @@ const isDivisible = (n, x, y) => n % x == 0 && n % y == 0
 function isDivisible(n, x, y) {
   return !(n % x || n % y)
 }
+
+// DeMorgan's Law Solution
+
+const isDivisible = (n, x, y) => !((n % x) + (n % y))
