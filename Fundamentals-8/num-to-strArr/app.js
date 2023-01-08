@@ -7,3 +7,6 @@
 // 35231 => [1,3,2,5,3]
 // 0 => [0]
 
+function digitize(str) {
+  return String(str).split('').reverse().map(Number)
+}
