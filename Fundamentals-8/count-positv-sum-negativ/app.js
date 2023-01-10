@@ -9,3 +9,10 @@
 
 // Example
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length < 2) return []
+  const positive = input.filter(num => num > 0).length
+  const sum = input.filter(num => num < 0).reduce((s, c) => s + c, 0)
+  return [positive, sum]
+}
