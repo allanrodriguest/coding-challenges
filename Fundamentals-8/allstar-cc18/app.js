@@ -18,3 +18,9 @@
 
 const strCount = (str, letter) =>
   str.split('').filter(element => element === letter).length
+
+// Amazing Solution
+
+function strCount(str, letter) {
+  return str.split(letter).length - 1
+}
