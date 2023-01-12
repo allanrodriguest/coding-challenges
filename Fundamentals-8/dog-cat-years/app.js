@@ -22,3 +22,19 @@
 // 15 dog years for first year
 // +9 dog years for second year
 // +5 dog years for each year after that
+
+var humanYearsCatYearsDogYears = function (humanYears) {
+  let catYears = 15,
+    dogYears = 15
+  if (humanYears === 1) {
+    return [humanYears, catYears, dogYears]
+  } else if (humanYears === 2) {
+    return [humanYears, catYears + 9, dogYears + 9]
+  } else {
+    return [
+      humanYears,
+      catYears + 9 + (humanYears - 2) * 4,
+      dogYears + 9 + (humanYears - 2) * 5
+    ]
+  }
+}
