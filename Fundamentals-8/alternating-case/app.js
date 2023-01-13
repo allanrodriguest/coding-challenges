@@ -21,3 +21,10 @@ String.prototype.toAlternatingCase = function () {
     )
     .join('')
 }
+
+// Solution using the rest operator
+
+String.prototype.toAlternatingCase = function () {
+  return [...this].map(char => char[`to${char > 'Z' ? 'Uppe' : 'Lowe'}rCase`]())
+    .join``
+}
