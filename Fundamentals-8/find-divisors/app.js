@@ -6,3 +6,6 @@
 
 // Example(Input1, Input2 --> Output)
 // [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
+
+const divisibleBy = (numbers, divisor) =>
+  numbers.filter(item => !(item % divisor))
