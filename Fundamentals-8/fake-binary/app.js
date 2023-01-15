@@ -5,3 +5,8 @@
 
 // Note: input will never be an empty string
 
+const fakeBin = x =>
+  x
+    .split('')
+    .map(item => (item < 5 ? 0 : 1))
+    .join('')
