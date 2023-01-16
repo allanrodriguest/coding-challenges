@@ -10,3 +10,10 @@ const fakeBin = x =>
     .split('')
     .map(item => (item < 5 ? 0 : 1))
     .join('')
+
+
+// Solution using RegEx
+
+function fakeBin(x) {
+  return x.replace(/\d/g, n => '0000011111'[n])
+}
