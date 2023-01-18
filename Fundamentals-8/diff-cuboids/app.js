@@ -9,3 +9,9 @@
 // Your function will be tested with pre-made examples as well as random ones.
 
 // If you can, try writing it in one line of code.
+
+function findDifference(a, b) {
+  return Math.abs(
+    a.reduce((acc, c) => acc * c, 1) - b.reduce((acc, c) => acc * c, 1)
+  )
+}
