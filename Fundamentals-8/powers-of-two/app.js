@@ -8,3 +8,11 @@
 // n = 0  ==> [1]        # [2^0]
 // n = 1  ==> [1, 2]     # [2^0, 2^1]
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+function powersOfTwo(n) {
+  let result = [1]
+  for (let i = 1; i <= n; i++) {
+    result.push(result[i - 1] * 2)
+  }
+  return result
+}
