@@ -15,3 +15,12 @@
 
 const squareOrSquareRoot = arr =>
   arr.map(item => (!(Math.sqrt(item) % 1) ? Math.sqrt(item) : item ** 2))
+
+// Solution checking if the number its an integer
+
+function squareOrSquareRoot(array) {
+  return array.map(x => {
+    const n = Math.sqrt(x)
+    return Number.isInteger(n) ? n : x * x
+  })
+}
