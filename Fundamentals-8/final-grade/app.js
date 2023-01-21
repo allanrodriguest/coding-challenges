@@ -24,3 +24,10 @@
 
 // 55, 0 --> 0
 // 20, 2 --> 0
+
+function finalGrade(exam, proj) {
+  return exam > 90 || proj > 10 ? 100
+    : exam > 75 && proj >= 5 ? 90
+    : exam > 50 && proj >= 2 ? 75
+    : 0
+}
