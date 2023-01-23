@@ -34,3 +34,12 @@ function calculateTip(amount, rating) {
       return 'Rating not recognised'
   }
 }
+
+// Great Solution
+
+let calculateTip = (amount, rating) => {
+  const i = ['terrible', 'poor', 'good', 'great', 'excellent'].indexOf(
+    rating.toLowerCase()
+  )
+  return i === -1 ? 'Rating not recognised' : Math.ceil(i * amount * 0.05)
+}
