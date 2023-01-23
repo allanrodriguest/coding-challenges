@@ -16,3 +16,21 @@
 // ...or null in Java
 // ...or -1 in C#
 // Because you're a nice person, you always round up the tip, regardless of the service.
+
+function calculateTip(amount, rating) {
+  let answer = rating.toLowerCase()
+  switch (answer) {
+    case 'terrible':
+      return 0
+    case 'poor':
+      return Math.ceil(0.05 * amount)
+    case 'good':
+      return Math.ceil(0.1 * amount)
+    case 'great':
+      return Math.ceil(0.15 * amount)
+    case 'excellent':
+      return Math.ceil(0.2 * amount)
+    default:
+      return 'Rating not recognised'
+  }
+}
