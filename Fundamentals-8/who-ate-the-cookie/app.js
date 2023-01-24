@@ -6,3 +6,14 @@
 // Ex: Input = "hi" --> Output = "Who ate the last cookie? It was Zach! (The reason you return Zach is because the input is a string)
 
 // Note: Make sure you return the correct message with correct spaces and punctuation.
+
+const eaters = {
+  string: 'Zach',
+  number: 'Monica',
+  boolean: 'the dog'
+}
+function cookie(x) {
+  return `Who ate the last cookie? It was ${
+    eaters[typeof x] ? eaters[typeof x] : 'the dog'
+  }!`
+}
