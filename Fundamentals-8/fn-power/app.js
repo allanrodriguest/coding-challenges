@@ -8,3 +8,8 @@
 // numberToPower(2, 3)  // -> 8 ( = 2 * 2 * 2 )
 // numberToPower(10, 6) // -> 1000000
 // Note: Math.pow and some other Math functions like eval() and ** are disabled.
+
+const numberToPower = (number, power) =>
+  Array.from({ length: power })
+    .fill(number)
+    .reduce((acc, c) => acc * c, 1)
