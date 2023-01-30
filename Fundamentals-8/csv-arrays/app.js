@@ -23,4 +23,9 @@
 const toCsvText = arr =>
   [...arr].reduce((acc, c) => acc + c + '\n', '').slice(0, -1)
 
+// Solution using join()
+
+function toCsvText(array) {
+  return array.join('\n')
+}
 
