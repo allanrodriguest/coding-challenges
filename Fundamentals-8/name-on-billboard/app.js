@@ -12,3 +12,9 @@ function billboard(name, price = 30) {
   }
   return answer
 } 
+
+// Solution using reduce method
+
+function billboard(name, price = 30) {
+  return name.split('').reduce((acc, c) => acc + price, 0)
+}
