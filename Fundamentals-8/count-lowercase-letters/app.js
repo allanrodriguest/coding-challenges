@@ -16,3 +16,9 @@
 
 const lowercaseCount = str =>
   str.split('').filter(el => 'a' <= el && el <= 'z').length
+
+// RegEx solution
+
+function lowercaseCount(str) {
+  return str.replace(/[^a-z]/g, "").length
+}
