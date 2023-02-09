@@ -13,3 +13,6 @@
 // lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"); ===> 0
 
 // lowercaseCount("abcdefghijklmnopqrstuvwxyz"); ===> 26
+
+const lowercaseCount = str =>
+  str.split('').filter(el => 'a' <= el && el <= 'z').length
