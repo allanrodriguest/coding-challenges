@@ -11,3 +11,8 @@ function isLockNessMonster(str) {
   const catchingNess = /(tree fiddy|3.50|three fifty)/
   return str.match(catchingNess) !== null
 }
+
+// solution #2
+
+ const isLockNessMonster = str =>
+   str.includes('tree fiddy') || str.includes('3.50') || str.includes('three fifty')
