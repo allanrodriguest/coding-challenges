@@ -17,3 +17,9 @@
 // return true or false
 
 
+const beginsWith = ['1', '2', '3']
+
+function validateCode(code) {
+  let answer = '' + code
+  return beginsWith.includes(answer[0])
+}
