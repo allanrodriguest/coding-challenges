@@ -14,3 +14,10 @@
 // isDigit("zero")
 
 const isDigit = str => !isNaN(str) && !isNaN(parseFloat(str))
+
+
+// Shorter solution
+
+function isDigit(str) {
+  return str == parseFloat(str)
+}
