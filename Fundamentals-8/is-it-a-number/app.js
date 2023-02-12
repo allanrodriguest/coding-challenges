@@ -12,3 +12,5 @@
 // isDigit("  3   5")
 // isDigit("3 5")
 // isDigit("zero")
+
+const isDigit = str => !isNaN(str) && !isNaN(parseFloat(str))
