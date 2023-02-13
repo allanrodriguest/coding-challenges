@@ -8,3 +8,20 @@
 // if oscar was 86, you have to return "Not even for Wolf of wallstreet?!"
 // if it was not 88 or 86 (and below 88) you should return "When will you give Leo an Oscar?"
 // if it was over 88 you should return "Leo got one already!"
+
+const dicaprioMVP = {
+  89: 'Leo got one already!',
+  88: 'Leo finally won the oscar! Leo is happy',
+  87: 'When will you give Leo an Oscar?',
+  86: 'Not even for Wolf of wallstreet?!'
+}
+
+function leo(oscar) {
+  return oscar === 88
+    ? dicaprioMVP[88]
+    : oscar === 86
+    ? dicaprioMVP[86]
+    : oscar > 88
+    ? dicaprioMVP[89]
+    : dicaprioMVP[87]
+}
