@@ -13,3 +13,8 @@
 
 // Note
 // The given name may varies in casing, eg., it can be "George Saint Pierre" or "geOrGe saiNT pieRRE". Your solution should treat both as the same thing (case-insensitive).
+
+const quote = fighter =>
+  fighter[0].toLowerCase() === 'g'
+    ? 'I am not impressed by your performance.'
+    : "I'd like to take this chance to apologize.. To absolutely NOBODY!"
