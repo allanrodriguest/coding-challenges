@@ -8,3 +8,5 @@
 // + , .concat() & .join() will not be allowed in this exercise. I have also removed some other methods that can be used to cheat!
 
 // If one of the arguments is a number your code must coerce it into being a string.
+
+const joinStrings = (string1, string2) => `${string1} ${string2}`
