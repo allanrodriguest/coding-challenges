@@ -5,3 +5,9 @@
 
 // uniTotal("a") == 97
 // uniTotal("aaa") == 291
+
+const uniTotal = str =>
+  str
+    .split('')
+    .map(item => item.charCodeAt(0))
+    .reduce((acc, c) => acc + c, 0)
