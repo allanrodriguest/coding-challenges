@@ -11,3 +11,8 @@ const uniTotal = str =>
     .split('')
     .map(item => item.charCodeAt(0))
     .reduce((acc, c) => acc + c, 0)
+
+// Simplified solution
+
+const uniTotal = str =>
+  str.reduce((acc, c) => acc + c.charCodeAt(0), 0)
