@@ -12,3 +12,7 @@ function multiply(number) {
     FIVE = 5
   return number * FIVE ** (n1[0] == '-' ? n1.slice(1).length : n1.length)
 }
+
+// Solution #2 using Math.abs()
+
+const multiply = number => number * Math.pow(5, Math.abs(number).toString().length)
