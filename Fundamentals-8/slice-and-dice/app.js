@@ -9,3 +9,5 @@
 // first(arr, 2) //=> ['a', 'b']
 // first(arr, 3) //=> ['a', 'b', 'c'];
 // first(arr, 0) //=> [];
+
+const first = (arr, n = 1) => (n < 1 ? [] : [...arr].slice(0, n))
