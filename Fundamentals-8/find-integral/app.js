@@ -15,3 +15,5 @@
 // 20, 1  -->  "10x^2"
 // 40, 3  -->  "10x^4"
 // 90, 2  -->  "30x^3"
+
+const integrate = (coef, expo) => `${coef / (expo + 1)}x^${expo + 1}`
