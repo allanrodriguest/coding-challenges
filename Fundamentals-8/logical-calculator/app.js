@@ -20,3 +20,14 @@
 // a string specifying a logical operator: "AND", "OR", "XOR"
 // Output
 // A Boolean value (True or False).
+
+function logicalCalc(array, op) {
+  switch (op) {
+    case 'AND':
+      return array.reduce((acc, c) => acc && c)
+    case 'OR':
+      return array.reduce((acc, c) => acc || c)
+    case 'XOR':
+      return array.reduce((acc, c) => acc !== c)
+  }
+}
