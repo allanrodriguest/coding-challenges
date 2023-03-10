@@ -2,6 +2,10 @@
 
 Daily Coding Exercises to sharpen problem solving skills.
 
+
+![image](https://user-images.githubusercontent.com/60073178/224199236-519357d7-1b36-4529-8031-213f503fda2d.png)
+
+
 ## <a target="_blank" href="https://www.codewars.com/users/allanrodriguest" >Visit my profile here</a> 
 
 ## Tech used:
