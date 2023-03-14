@@ -8,3 +8,10 @@
 // arr2bin([]) == '0'
 
 // NOTE: NaN is a number too in javascript for decimal, binary and n-ary base
+
+
+const arr2bin = arr =>
+  arr
+    .filter(el => typeof el == 'number')
+    .reduce((a, c) => a + c, 0)
+    .toString(2)
