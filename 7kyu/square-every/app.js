@@ -8,3 +8,9 @@
 // Note: The function accepts an integer and returns an integer.
 
 // Happy Coding!
+
+const squareDigits = num =>
+  +(num + '')
+    .split('')
+    .map(el => el ** 2)
+    .join('')
