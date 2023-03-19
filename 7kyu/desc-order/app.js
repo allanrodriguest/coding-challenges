@@ -7,3 +7,9 @@
 // Input: 145263 Output: 654321
 
 // Input: 123456789 Output: 987654321
+
+const descendingOrder = num =>
+  +(num + '')
+    .split('')
+    .sort((a, b) => b - a)
+    .join('')
