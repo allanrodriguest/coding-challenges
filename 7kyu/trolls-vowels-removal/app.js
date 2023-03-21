@@ -16,3 +16,9 @@ const disemvowel = str =>
     .split('')
     .filter(el => !vowels.includes(el.toLowerCase()))
     .join('')
+
+// RegEx solution
+
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '')
+}
