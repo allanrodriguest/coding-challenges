@@ -8,3 +8,11 @@
 // For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
 // Note: for this kata y isn't considered a vowel.
+
+const vowels = ['a', 'e', 'i', 'o', 'u']
+
+const disemvowel = str =>
+  str
+    .split('')
+    .filter(el => !vowels.includes(el.toLowerCase()))
+    .join('')
