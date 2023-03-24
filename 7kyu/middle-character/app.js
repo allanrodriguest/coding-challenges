@@ -18,4 +18,10 @@
 
 // The middle character(s) of the word represented as a string.
 
-// FUNDAMENTALSSTRINGS
+const getMiddle = str =>
+  str.length % 2
+    ? `${str.slice(Math.round(str.length / 2 - 1), Math.round(str.length / 2))}`
+    : `${str.slice(
+        Math.round(str.length / 2 - 1),
+        Math.round(str.length / 2) + 1
+      )}`
