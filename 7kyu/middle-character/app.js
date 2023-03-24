@@ -25,3 +25,9 @@ const getMiddle = str =>
         Math.round(str.length / 2 - 1),
         Math.round(str.length / 2) + 1
       )}`
+
+// Simplified solution using substring()
+
+function getMiddle(str) {
+  return str.substring(Math.ceil(str.length / 2 - 1), str.length % 2 ? 1 : 2)
+}
