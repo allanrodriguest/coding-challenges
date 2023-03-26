@@ -18,3 +18,5 @@
 //  4  =>  true
 // 25  =>  true
 // 26  =>  false
+
+const isSquare = num => Math.sqrt(num) % 1 === 0
