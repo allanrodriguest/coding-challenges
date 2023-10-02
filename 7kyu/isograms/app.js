@@ -8,3 +8,5 @@
 // isIsogram "Dermatoglyphics" = true
 // isIsogram "moose" = false
 // isIsogram "aba" = false
+
+const isIsogram = str => new Set(str.toLowerCase()).size === str.length
