@@ -8,3 +8,10 @@
 // XO("ooxXm") => true
 // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 // XO("zzoo") => false
+
+function XO(str) {
+  return (
+    str.split('').filter(el => el.toLowerCase() === 'x').length ===
+    str.split('').filter(el => el.toLowerCase() === 'o').length
+  )
+}
